@@ -225,3 +225,98 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@font-face {
+  font-family: "Pacifico", cursive;
+  src: url("../../../assets/fonts/Pacifico-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url("../../../assets/fonts/Lato-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url("../../../assets/fonts/Lato-Bold.ttf");
+  font-weight: bold;
+}
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 1rem;
+  color: #161515;
+  font-weight: normal;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pacifico";
+  margin: 0;
+}
+
+h1, h2, h3, h5 {
+  color: #1A315C;
+}
+
+h4, h6 {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 3.4rem;
+  line-height: 3.2rem;
+}
+
+h2 {
+  font-size: 2.9rem;
+  line-height: 3.4rem;
+}
+
+h3 {
+  font-size: 2.15rem;
+  line-height: 2.9rem;
+  letter-spacing: 2.7px;
+}
+
+h4 {
+  font-size: 2rem;
+  letter-spacing: 4.3px;
+}
+
+h5 {
+  font-size: 2rem;
+  text-align: right;
+  line-height: 2.9rem;
+  letter-spacing: 2.5px;
+}
+
+h6 {
+  font-size: 1.75rem;
+  letter-spacing: 2.9px;
+}
+
+.logo {
+  font-family: "Pacifico";
+  line-height: 1.2rem;
+  letter-spacing: 1.7px;
+}
+
+.buttonStyle {
+  font-family: "Pacifico";
+  text-align: center;
+  line-height: 1.6rem;
+  letter-spacing: 1.4px;
+}
+
+.nav {
+  font-family: "Lato";
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.45rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
