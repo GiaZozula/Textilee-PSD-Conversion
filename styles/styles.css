@@ -227,17 +227,17 @@ html {
 }
 
 @font-face {
-  font-family: "Pacifico", cursive;
-  src: url("../../../assets/fonts/Pacifico-Regular.ttf");
+  font-family: "Pacifico";
+  src: url("../assets/fonts/Pacifico-Regular.ttf");
 }
 @font-face {
-  font-family: "Lato", sans-serif;
-  src: url("../../../assets/fonts/Lato-Regular.ttf");
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Regular.ttf");
   font-weight: normal;
 }
 @font-face {
-  font-family: "Lato", sans-serif;
-  src: url("../../../assets/fonts/Lato-Bold.ttf");
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Bold.ttf");
   font-weight: bold;
 }
 html {
@@ -249,77 +249,88 @@ body {
   font-size: 1rem;
   color: #161515;
   font-weight: normal;
+  margin: 0;
+}
+
+.navBarItems {
+  font-family: "Lato";
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.45rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.designH1, .designH2, .designH3, .designH4, .designH5, .designH6 {
   font-family: "Pacifico";
   margin: 0;
 }
 
-h1, h2, h3, h5 {
+.designH1, .designH2, .designH3, .designH5, .navBarItems {
   color: #1A315C;
 }
 
-h4, h6 {
+.designH4, .designH6 {
   color: #FFFFFF;
 }
 
-h1 {
+.designH1 {
   font-size: 3.4rem;
   line-height: 3.2rem;
 }
 
-h2 {
+.designH2 {
   font-size: 2.9rem;
   line-height: 3.4rem;
 }
 
-h3 {
+.designH3 {
   font-size: 2.15rem;
   line-height: 2.9rem;
   letter-spacing: 2.7px;
 }
 
-h4 {
+.designH4 {
   font-size: 2rem;
   letter-spacing: 4.3px;
 }
 
-h5 {
+.designH5 {
   font-size: 2rem;
   text-align: right;
   line-height: 2.9rem;
   letter-spacing: 2.5px;
 }
 
-h6 {
+.designH6 {
   font-size: 1.75rem;
   letter-spacing: 2.9px;
 }
 
-p {
+.designP {
   line-height: 1.4rem;
   letter-spacing: 2px;
   margin: 0;
-}
-
-ul, li, a, input {
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .logo {
   font-family: "Pacifico";
   line-height: 1.2rem;
   letter-spacing: 1.7px;
+  color: #1E1713;
+}
+
+a {
+  text-decoration: none;
 }
 
 .buttonStyle {
@@ -329,17 +340,31 @@ a {
   letter-spacing: 1.4px;
 }
 
-.nav {
-  font-family: "Lato";
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.45rem;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-}
-
 .wrapper {
   max-width: 1260px;
   width: 90%;
   margin: 0, auto;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navBar .navBarItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+ul, li, a, input {
+  padding: 0;
+  margin: 0;
 }
