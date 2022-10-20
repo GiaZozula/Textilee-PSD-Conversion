@@ -32,6 +32,7 @@ body {
 .navBarItems {
     font-family: variables.$bodyFont;
     font-weight: bold;
+    font-size: 1rem;
     text-align: center;
     line-height: 1.45rem;
     letter-spacing: 1.4px;
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.designH1, .designH2, .designH3, .designH5, .navBarItems {
+.designH1, .designH2, .designH3, .designH5, .navBarItems, a {
     color: variables.$darkSlateBlue;
 }
 
@@ -105,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2rem;
     letter-spacing: 1.7px;
     color: variables.$black; 
+    font-size: 1.5rem;
 }
 
 a {

@@ -255,6 +255,7 @@ body {
 .navBarItems {
   font-family: "Lato";
   font-weight: bold;
+  font-size: 1rem;
   text-align: center;
   line-height: 1.45rem;
   letter-spacing: 1.4px;
@@ -275,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.designH1, .designH2, .designH3, .designH5, .navBarItems {
+.designH1, .designH2, .designH3, .designH5, .navBarItems, a {
   color: #1A315C;
 }
 
@@ -327,6 +328,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2rem;
   letter-spacing: 1.7px;
   color: #1E1713;
+  font-size: 1.5rem;
 }
 
 a {
@@ -342,8 +344,12 @@ a {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
+}
+
+body {
+  background: black;
 }
 
 .navBar {
@@ -359,14 +365,15 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
   left: 0;
   right: 0;
 }
 .navBar .logo {
-  padding-left: 2%;
+  padding-left: 10px;
 }
 .navBar .navBarItems {
-  padding-left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,7 +383,10 @@ a {
           justify-content: right;
 }
 .navBar .navBarItems li {
-  padding: 1%;
+  padding: 10px 50px 10px 10px;
+}
+.navBar .navBarItems li a:hover {
+  border-bottom: 2px solid #0CADC0;
 }
 
 ul {
