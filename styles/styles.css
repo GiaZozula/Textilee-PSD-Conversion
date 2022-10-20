@@ -343,21 +343,40 @@ a {
 .wrapper {
   max-width: 1260px;
   width: 90%;
-  margin: 0, auto;
+  margin: 0 auto;
 }
 
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.navBar .navBarItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: fixed;
+  background-color: #FFFFFF;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.navBar .logo {
+  padding-left: 2%;
+}
+.navBar .navBarItems {
+  padding-left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.navBar .navBarItems li {
+  padding: 1%;
 }
 
 ul {

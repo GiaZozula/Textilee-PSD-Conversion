@@ -1,21 +1,38 @@
 @use './variables';
 
+// Base Styles for all pages
+
 // wrapper (same as in the notes, but i did re-type it out manually!)
 .wrapper {
     max-width: 1260px;
     width: 90%;
-    margin: 0, auto;
+    margin: 0 auto;
 }
-
 
 // navbar to appear on all pages
 .navBar {
     display: flex;
+    position: fixed;
+    background-color: variables.$white;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
 
+    .logo {
+        padding-left: 2%;
+    }
 
     .navBarItems {
+            padding-left: 50%;
             display: flex;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: right;          
+
+            li {
+                padding: 1%;
+            }
         }
 }
 
@@ -29,3 +46,46 @@ ul, li, a, input {
     margin: 0;
 }
 
+
+// ~~~~~~~~~~ Homepage ~~~~~~~~~~
+
+.index {
+
+
+
+
+
+
+
+
+
+}
+
+
+
+// ~~~~~~~~~~ Blog ~~~~~~~~~~
+
+.blog {
+
+
+
+
+
+
+
+}
+
+
+
+// ~~~~~~~~~~ Contact ~~~~~~~~~~
+
+.contact {
+
+
+
+
+
+
+
+
+}
