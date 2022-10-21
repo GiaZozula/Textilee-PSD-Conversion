@@ -75,6 +75,8 @@ ul, li, a, input {
         }
     }
 
+    // Learn New Techniques Section
+
     .learnBG {
         background-color: variables.$lightSkyBlue;
         padding-top: 12%;
@@ -98,6 +100,7 @@ ul, li, a, input {
         }
     }
 
+    // Gallery Section 
     .galleryBG {
         background-color: variables.$teal;
         padding-top: 6%;
@@ -113,6 +116,7 @@ ul, li, a, input {
         }
     }
 
+    // Other Pages Section
     .otherBG {
         background-color: variables.$lightSkyBlue;
         padding-top: 5%;
@@ -140,19 +144,40 @@ ul, li, a, input {
                 .otherTitle {
                     display: flex;
                 }
-                
-
             }
         }
     }
 
 
+    // Quadrant Image & Text Section
 
+    .quadrantContainer {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: variables.$teal;
+        color: variables.$white;
+        gap: 10%;
 
+        div {
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
 
+            .buttonStyle {
+                color: variables.$blackTwo;
+                background-color: variables.$lighterBlue;
+            }
+        }
 
-}
+        img {
+            display: flex;
+            width: 40%;
+        }
+    }
 
+} 
 
 
 // ~~~~~~~~~~ Blog ~~~~~~~~~~

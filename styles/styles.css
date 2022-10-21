@@ -308,6 +308,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .designH5 {
+  color: #FFFFFF;
   font-size: 2rem;
   text-align: right;
   line-height: 2.9rem;
@@ -483,4 +484,40 @@ ul, li, a, input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.index .quadrantContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #21404F;
+  color: #FFFFFF;
+  gap: 10%;
+}
+.index .quadrantContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.index .quadrantContainer div .buttonStyle {
+  color: #161515;
+  background-color: #C6D9FB;
+}
+.index .quadrantContainer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
 }
