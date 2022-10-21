@@ -358,6 +358,16 @@ body {
   background-color: #f5f5f5;
 }
 
+footer {
+  background-color: #161515;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0.5%;
+}
+footer p {
+  margin: 0;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,4 +530,29 @@ ul, li, a, input {
   display: -ms-flexbox;
   display: flex;
   width: 40%;
+}
+.index .quadrantContainer .imgBorderR {
+  -webkit-transform: translate(0px, -10%);
+          transform: translate(0px, -10%);
+}
+.index .quadrantContainer .imgBorderL {
+  -webkit-transform: translate(0px, 10%);
+          transform: translate(0px, 10%);
+}
+.index .bannerBG {
+  display: block;
+  padding-bottom: 20%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/banner.jpg");
+}
+.index .searchMainContainer {
+  background-color: #CCEDFB;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  text-align: center;
+}
+.index .searchMainContainer p {
+  padding-bottom: 3%;
 }

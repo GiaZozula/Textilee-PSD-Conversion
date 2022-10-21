@@ -13,6 +13,18 @@ body {
     background-color: variables.$silver;
 }
 
+footer {
+    background-color: variables.$blackTwo;
+    color: variables.$white;
+    text-align: center;
+    padding: .5%;
+    
+    p {
+        margin: 0;
+    }
+}
+
+
 // navbar to appear on all pages
 .navBar {
     display: flex;
@@ -175,8 +187,38 @@ ul, li, a, input {
             display: flex;
             width: 40%;
         }
+
+        .imgBorderR {
+            transform: translate(0px, -10%);
+        }
+
+        .imgBorderL {
+            transform: translate(0px, 10%);
+        }
     }
 
+    //Banner Background
+    .bannerBG   {
+        display: block;
+        padding-bottom: 20%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/banner.jpg");
+    }
+
+
+    //Search Section
+    .searchMainContainer {
+        background-color: variables.$lightSkyBlue;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        text-align: center;
+    
+        p {
+            padding-bottom: 3%;
+        }
+    }
 } 
 
 
