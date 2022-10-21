@@ -10,14 +10,13 @@
 }
 
 body {
-    background: black;
+    background-color: variables.$silver;
 }
 
 // navbar to appear on all pages
 .navBar {
     display: flex;
     position: fixed;
-    background-color: variables.$white;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -64,8 +63,17 @@ ul, li, a, input {
 
 .index {
 
-
-
+    header {
+        background-image: url("../assets/images/header-home.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        h2 {
+            margin: 0;
+            padding-left: calc(7.5% + 20px);
+            padding-top: 6%;
+            padding-bottom: 5%;
+        }
+    }
 
 
 
