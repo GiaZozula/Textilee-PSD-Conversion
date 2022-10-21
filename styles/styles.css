@@ -251,6 +251,7 @@ body {
   font-weight: normal;
   margin: 0;
   letter-spacing: 2px;
+  line-height: 28px;
 }
 
 .navBarItems {
@@ -341,7 +342,7 @@ a {
   text-align: center;
   line-height: 1.6rem;
   letter-spacing: 1.4px;
-  padding: 3px 23px 3px 23px;
+  padding: 0px 27px 4px 27px;
   color: #FFFFFF;
   background-color: #1A315C;
 }
@@ -423,6 +424,13 @@ ul, li, a, input {
   display: -ms-flexbox;
   display: flex;
 }
+.index .learnBG .learnContainer .learnColumnContainer {
+  padding-right: 15%;
+  width: 70%;
+}
+.index .learnBG .learnContainer .learnColumnContainer p {
+  padding-bottom: 30px;
+}
 .index .learnBG .learnContainer img {
   -webkit-box-shadow: -20px 20px 0px 0px #0CADC0;
           box-shadow: -20px 20px 0px 0px #0CADC0;
@@ -471,7 +479,7 @@ ul, li, a, input {
   font-size: 1em;
   color: #0CADC0;
 }
-.index .otherBG .otherPagesContainer .otherPages a {
+.index .otherBG .otherPagesContainer .otherPages .otherTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
