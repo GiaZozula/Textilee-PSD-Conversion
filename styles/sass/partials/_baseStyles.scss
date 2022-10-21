@@ -96,13 +96,50 @@ ul, li, a, input {
 
         .galleryContainer {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
         img {
-            width: 30%;
+            width: 31%;
         }
     }
+
+    .otherBG {
+        background-color: variables.$lightSkyBlue;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        .otherPagesContainer{
+            display: flex;
+            flex-wrap: wrap;
+
+            .otherPages {
+                width: 50%;
+                padding-left: 5%;
+
+
+                span {
+                    margin-left: -100px;
+                    margin-right: -15px;
+                    padding-right: 10px;
+                    padding-left: 100px;
+                    padding-top: 7px;
+                    display: flex;
+                    font-size: 1em;
+                    color: variables.$turqoiseBlue;
+                }
+
+                a {
+                    display: flex;
+                }
+                
+
+            }
+        }
+    }
+
+
+
 
 
 

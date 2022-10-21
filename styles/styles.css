@@ -250,6 +250,7 @@ body {
   color: #161515;
   font-weight: normal;
   margin: 0;
+  letter-spacing: 2px;
 }
 
 .navBarItems {
@@ -435,9 +436,43 @@ ul, li, a, input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .index .galleryBG img {
-  width: 30%;
+  width: 31%;
+}
+.index .otherBG {
+  background-color: #CCEDFB;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.index .otherBG .otherPagesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.index .otherBG .otherPagesContainer .otherPages {
+  width: 50%;
+  padding-left: 5%;
+}
+.index .otherBG .otherPagesContainer .otherPages span {
+  margin-left: -100px;
+  margin-right: -15px;
+  padding-right: 10px;
+  padding-left: 100px;
+  padding-top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1em;
+  color: #0CADC0;
+}
+.index .otherBG .otherPagesContainer .otherPages a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
