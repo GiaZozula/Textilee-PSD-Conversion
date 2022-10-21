@@ -340,11 +340,14 @@ a {
   text-align: center;
   line-height: 1.6rem;
   letter-spacing: 1.4px;
+  padding: 3px 23px 3px 23px;
+  color: #FFFFFF;
+  background-color: #1A315C;
 }
 
 .wrapper {
   max-width: 1260px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -356,7 +359,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -366,8 +368,6 @@ body {
   width: 100%;
   padding-left: 7.5%;
   padding-right: 7.5%;
-  left: 0;
-  right: 0;
 }
 .navBar .logo {
   padding-left: 10px;
@@ -401,10 +401,43 @@ ul, li, a, input {
   background-image: url("../assets/images/header-home.jpg");
   background-position: right;
   background-repeat: no-repeat;
+  padding-bottom: 22%;
 }
 .index header h2 {
   margin: 0;
   padding-left: calc(7.5% + 20px);
-  padding-top: 6%;
+  padding-top: 5%;
   padding-bottom: 5%;
+}
+.index header img {
+  position: absolute;
+}
+.index .learnBG {
+  background-color: #CCEDFB;
+  padding-top: 12%;
+  padding-bottom: 6%;
+}
+.index .learnBG .learnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.index .learnBG .learnContainer img {
+  -webkit-box-shadow: -20px 20px 0px 0px #0CADC0;
+          box-shadow: -20px 20px 0px 0px #0CADC0;
+}
+.index .galleryBG {
+  background-color: #21404F;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+.index .galleryBG .galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.index .galleryBG img {
+  width: 30%;
 }

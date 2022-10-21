@@ -5,7 +5,7 @@
 // wrapper (same as in the notes, but i did re-type it out manually!)
 .wrapper {
     max-width: 1260px;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -16,15 +16,11 @@ body {
 // navbar to appear on all pages
 .navBar {
     display: flex;
-    position: fixed;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding-left: 7.5%;
     padding-right: 7.5%;
-    //not sure I totally understand it, but I found this info here: https: //css-tricks.com/forums/topic/nav-bar-wont-center-properly/
-    left: 0;
-    right: 0;
 
     .logo {
         padding-left: 10px;
@@ -67,16 +63,46 @@ ul, li, a, input {
         background-image: url("../assets/images/header-home.jpg");
         background-position: right;
         background-repeat: no-repeat;
+        padding-bottom: 22%;
         h2 {
             margin: 0;
             padding-left: calc(7.5% + 20px);
-            padding-top: 6%;
+            padding-top: 5%;
             padding-bottom: 5%;
+        }
+        img {
+            position: absolute;
         }
     }
 
+    .learnBG {
+        background-color: variables.$lightSkyBlue;
+        padding-top: 12%;
+        padding-bottom: 6%;
 
+        .learnContainer {
+            display: flex;
 
+            img {
+                box-shadow: -20px 20px 0px 0px variables.$turqoiseBlue;
+            }
+        }
+    }
+
+    .galleryBG {
+        background-color: variables.$teal;
+        padding-top: 6%;
+        padding-bottom: 6%;
+
+        .galleryContainer {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        img {
+            width: 30%;
+        }
+    }
 
 
 
