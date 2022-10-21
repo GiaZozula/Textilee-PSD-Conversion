@@ -15,34 +15,37 @@
   <!-- <a href="#main" class="skip-link">Skip to main content.</a> -->
 
 
-    <!-- Nav -->
-    <nav class="navBar">
-        <a href="./index.html" class="logo">
-            <h1 class="logo">Textilee</h1>    
-        </a>
-        <ul class="navBarItems">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
 
-    <!-- todo: Add mobile navbar/slide menu -->
-    </nav>
 
     <!-- Header -->
     <header>
-        <h2 class="designH1 wrapper">Blog</h2>
+        <div class="wrapper">
+            <!-- Nav -->
+            <nav class="navBar">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo">Textilee</h1>    
+                </a>
+                <ul class="navBarItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <!-- todo: Add mobile navbar/slide menu -->
+                </nav>
+            <h2 class="designH1">Blog</h2>
+        </div>
     </header>
 
     <!-- Main -->
     <main class="blogMainContainer" id="main">
 
         <!-- Blog -->
-        <section class="blogContainer">
-            <img src="./assets/images/blog-post-image.jpg" alt="a folded stack of fabrics">
+        <section class="blogContainer blogStyles">
+            <img src="./assets/images/blog-post-image.jpg" alt="a folded stack of fabrics" class="blogImg">
             <article class="blogTextContainer">
-                <h3>Our new collection</h3>
+                <h3 class="designH5">Our new collection</h3>
                 <p class="timestamp">Monday, October 5th, 2019 by Saron</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus omnis molestias? Maiores voluptatem laborum adipisci. Dolore quis, dolorem eos exercitationem distinctio similique, aspernatur vel molestias perspiciatis sunt porro ipsum rerum, eligendi nesciunt facilis ut?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga amet nisi debitis, nesciunt rerum facilis ab porro ducimus, modi quasi commodi iusto illo iure aperiam deleniti distinctio rem dolores accusantium praesentium asperiores quo voluptatum recusandae totam. Nobis natus magnam dignissimos!</p>
@@ -54,7 +57,7 @@
 
         <!-- Comment Section -->
         <section class="commentSectionContainer">
-            <h4>Comments</h4>
+            <h4 class="designH4">Comments</h4>
 
             <div class="commentContainer">
                 <img src="./assets/images/comment-1.jpg" alt="profile picture of a user named Louise">
@@ -71,19 +74,37 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque aliquid similique omnis odio voluptatem labore optio velit tempore obcaecati.</p>
                 </div> <!-- end of commentTextContainer -->
             </div> <!-- end of commentContainer -->
+        
+        <!-- Form -->
+        <form action="submit">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Email address">
+
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" placeholder="Message">
+
+            <button class="buttonStyle">submit</button>
+        </form>
+        
+        
         </section>
 
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar blogStyles">
             <img src="./assets/images/sidebar-image.jpg" alt="rolls of fabric with rough edges">
             <div class="sideContainer">
-                <h5>Our mission</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquid ratione voluptate accusantium eum excepturi.</p>
-                <a href="#">Find out more</a>
+                <h5 class="designH5">Our mission</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit  aliquid ratione voluptate accusantium eum. 
+                    <br>
+                        <a href="#">Find out more.</a>
+                </p>    
             </div><!-- end of sideContainer -->
 
             <div class="sideContainer">
-                <h5>Recent Posts</h5>
+                <h5 class="designH5">Recent Posts</h5>
                 <ul class="sideList">
                     <li>
                         <a href="#">Donec facilisis tortor ut</a>

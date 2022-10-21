@@ -60,8 +60,8 @@ h1, h2, h3, h4, h5, h6 {
     color: variables.$darkSlateBlue;
 }
 
-.designH4, .designH6 {
-    color: variables.$white;
+.designH4, {
+    color: variables.$blackTwo;
 }
 
 .designH1 {
@@ -88,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
 .designH5 {
     color: variables.$white;
     font-size: 2rem;
-    text-align: right;
     line-height: 2.9rem;
     letter-spacing: 2.5px;
 }
@@ -126,4 +125,7 @@ a {
     background-color: variables.$darkSlateBlue;
 }
 
-
+.timestamp {
+    font-weight: bold;
+    color: variables.$darkSlateBlue;
+}

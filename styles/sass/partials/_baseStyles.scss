@@ -31,21 +31,15 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
-
-    .logo {
-        padding-left: 10px;
-    }
+    padding-top: 2%;
 
     .navBarItems {
-            // padding-left: 50%;
             display: flex;
             width: 100%;
             justify-content: right;          
 
             li {
-                padding: 10px 50px 10px 10px;
+                padding: 10px 0px 10px 50px;
                 a {
 
                     &:hover {
@@ -67,6 +61,15 @@ ul, li, a, input {
 }
 
 
+h2 {
+    margin: 0;
+    padding-left: calc(7.5% + 20px);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 // ~~~~~~~~~~ Homepage ~~~~~~~~~~
 
 .index {
@@ -76,12 +79,7 @@ ul, li, a, input {
         background-position: right;
         background-repeat: no-repeat;
         padding-bottom: 22%;
-        h2 {
-            margin: 0;
-            padding-left: calc(7.5% + 20px);
-            padding-top: 5%;
-            padding-bottom: 5%;
-        }
+
         img {
             position: absolute;
         }
@@ -108,6 +106,7 @@ ul, li, a, input {
 
             img {
                 box-shadow: -20px 20px 0px 0px variables.$turqoiseBlue;
+                transform: translate(73px, 0);
             }
         }
     }
@@ -226,9 +225,68 @@ ul, li, a, input {
 
 .blog {
 
+    main {
+        background-color: variables.$lightSkyBlue;
+    }
 
+    header {
+            background-image: url("../assets/images/blog-header.jpg");
+            background-position: bottom -100px;
+            background-repeat: no-repeat;
+            padding-bottom: 20%;
+            background-size: cover;
+    }
 
+    .blogStyles {
+        color: variables.$white;
+        background-color: variables.$teal;
+    }
 
+    .blogContainer{
+        width: 60%;
+
+            .timestamp {
+                color: variables.$lightSkyBlue;
+            }
+
+            // p {
+            //     color: variables.$white;
+            // } 
+
+            .blogImg {
+                    width: 100%;
+                    transform: translate(0px, -20%);
+                }
+    }
+
+    .sidebar {
+        width: 20%;
+        transform: translate(400%, -180%);
+        
+        img {
+            width: 95%;
+            transform: translate(20px, -20px);
+        }
+        
+        a {
+            color: inherit;
+        }
+
+        p, ul {
+            margin-top: 0;
+        }
+
+        .sideContainer {
+            padding-left: 5%;
+            padding-bottom: 20px;
+        }
+
+        .sideList {
+            list-style-type: disc;
+            list-style-position: inside;
+            padding-bottom: 20px;
+        }
+    }
 
 
 
