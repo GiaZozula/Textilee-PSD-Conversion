@@ -397,7 +397,7 @@ footer p {
 .navBar .navBarItems li {
   padding: 10px 0px 10px 50px;
 }
-.navBar .navBarItems li a:hover {
+.navBar .navBarItems li a:hover, .navBar .navBarItems li a:focus {
   border-bottom: 2px solid #0CADC0;
 }
 
@@ -562,15 +562,15 @@ h2 {
   padding-bottom: 3%;
 }
 
-.blog main {
-  background-color: #CCEDFB;
-}
 .blog header {
   background-image: url("../assets/images/blog-header.jpg");
   background-position: bottom -100px;
   background-repeat: no-repeat;
   padding-bottom: 20%;
   background-size: cover;
+}
+.blog main {
+  background-color: #CCEDFB;
 }
 .blog .blogStyles {
   color: #FFFFFF;
@@ -624,4 +624,71 @@ h2 {
   list-style-type: disc;
   list-style-position: inside;
   padding-bottom: 20px;
+}
+
+.contact header {
+  background-image: url("../assets/images/contact-header.jpg");
+  background-position: bottom -100px;
+  background-repeat: no-repeat;
+  padding-bottom: 20%;
+  background-size: cover;
+}
+.contact main {
+  background-color: #CCEDFB;
+}
+.contact main .formBG {
+  background-color: #21404F;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactForm .formWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactForm input, .contactForm textarea {
+  padding: 30px 15px 30px 15px;
+  border: none;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+  background-color: inherit;
+  letter-spacing: inherit;
+}
+.contactForm input:focus, .contactForm textarea:focus {
+  border-bottom: 3px solid #FFFFFF;
+}
+.contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+.contactForm input::-moz-placeholder, .contactForm textarea::-moz-placeholder {
+  opacity: 1;
+}
+.contactForm input:-ms-input-placeholder, .contactForm textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+.contactForm input::-ms-input-placeholder, .contactForm textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+.contactForm input::placeholder, .contactForm textarea::placeholder {
+  opacity: 1;
+}
+.contactForm input {
+  border-bottom: 2px solid #0CADC0;
+}
+.contactForm textarea {
+  border: 2px solid #0CADC0;
+}
+.contactForm button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: #C6D9FB;
 }

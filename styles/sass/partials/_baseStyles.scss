@@ -42,7 +42,7 @@ footer {
                 padding: 10px 0px 10px 50px;
                 a {
 
-                    &:hover {
+                    &:hover, &:focus {
                         border-bottom: 2px solid variables.$turqoiseBlue;
                     }
                 }
@@ -225,18 +225,17 @@ h2 {
 
 .blog {
 
+    header {
+        background-image: url("../assets/images/blog-header.jpg");
+        background-position: bottom -100px;
+        background-repeat: no-repeat;
+        padding-bottom: 20%;
+        background-size: cover;
+    }
+
     main {
         background-color: variables.$lightSkyBlue;
     }
-
-    header {
-            background-image: url("../assets/images/blog-header.jpg");
-            background-position: bottom -100px;
-            background-repeat: no-repeat;
-            padding-bottom: 20%;
-            background-size: cover;
-    }
-
 
     // this connects some styles of the blog post with the aside side bar
     .blogStyles {
@@ -323,10 +322,21 @@ h2 {
 
 .contact {
 
+    header {
+        background-image: url("../assets/images/contact-header.jpg");
+        background-position: bottom -100px;
+        background-repeat: no-repeat;
+        padding-bottom: 20%;
+        background-size: cover;
+    }
 
+    main {
+        background-color: variables.$lightSkyBlue;
+    }
 
-
-
+    main .formBG {
+        background-color: variables.$teal;
+    }
 
 
 

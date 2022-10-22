@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Textilee - Contact Us</title>
+    <title>Textilee - Contact</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link type="image/png" href="./assets/images/home-box-header.png" 
+    <link type="image/png" href="./assets/images/home-box-header.png" rel="icon">
+    <script src="https://kit.fontawesome.com/1636a011dd.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="contact">
@@ -15,45 +16,50 @@
   <!-- <a href="#main" class="skip-link">Skip to main content.</a> -->
 
 
-    <!-- Nav -->
-    <nav class="navBar">
-        <a href="./index.html" class="logo">
-            <h1 class="logo">Textilee</h1>    
-        </a>
-        <ul class="navBarItems">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-
-    <!-- todo: Add mobile navbar/slide menu -->
-    </nav>
-
     <!-- Header -->
     <header>
-        <h2 class="designH1 wrapper">Get in touch</h2>
+        <div class="wrapper">
+            <!-- Nav -->
+            <nav class="navBar">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo">Textilee</h1>    
+                </a>
+                <ul class="navBarItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <!-- todo: Add mobile navbar/slide menu -->
+                </nav>
+            <h2 class="designH1">Get in Touch</h2>
+        </div>
     </header>
 
     <!-- Main -->
-    <main id="main" class="contactMainContainer wrapper"> 
+    <main id="main" class="contactMainContainer"> 
 
         <!-- Form -->
-        <form action="submit">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Name">
+        <div class="formBG">
+            <form action="https://formspree.io/f/mgeqljkr" method="POST" class="contactForm wrapper" name="contactForm">
 
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Email address">
+                <div class="formWrap">
+                    <label for="name" class="sr-only">Enter your name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required="true">
 
-            <label for="message">Message</label>
-            <input type="text" name="message" id="message" placeholder="Message">
+                    <label for="email" class="sr-only">Enter your email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" required="true">
+                </div>
+                <label for="message" class="sr-only">Enter your message</label>
+                <textarea name="userFeedback" id="message" placeholder="Message" required="true"cols="30" rows="10" minlength="5" maxlength="200"></textarea>
 
-            <button class="buttonStyle">submit</button>
-        </form>
+                <button type="submit" class="buttonStyle">submit</button>
+            </form>
+        </div>
 
         <!-- Contanct Info Section -->
-        <section class="contactInfoContainer">
+        <section class="contactInfoContainer wrapper">
             <nav class="socials">
                 <a href="#">
                     <img src="#" alt="facebook icon">

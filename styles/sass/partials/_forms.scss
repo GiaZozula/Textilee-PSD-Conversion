@@ -1,0 +1,42 @@
+@use './variables';
+
+.contactForm {
+    display:flex;
+    flex-direction: column;
+
+    .formWrap {
+        display: flex;
+    }
+
+    input, textarea {
+        padding: 30px 15px 30px 15px;
+        border: none;
+        margin-bottom: 40px;
+        color: variables.$white;
+        background-color: inherit;
+        letter-spacing: inherit;
+
+        &:focus {
+            border-bottom: 3px solid variables.$white;
+        }
+        
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+
+    input {
+        border-bottom: 2px solid variables.$turqoiseBlue;
+    }
+
+    textarea {
+        border: 2px solid variables.$turqoiseBlue;
+    }
+
+    button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        background-color: variables.$lighterBlue;
+    }
+}
