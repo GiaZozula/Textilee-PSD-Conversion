@@ -25,6 +25,16 @@ footer {
 }
 
 
+// Image shadows
+.imgBorderL {
+    box-shadow: -20px 20px 0px 0px variables.$turqoiseBlue;
+}
+
+.imgBorderR {
+    box-shadow: 20px 20px 0px 0px variables.$turqoiseBlue;
+}
+
+
 // navbar to appear on all pages
 .navBar {
     display: flex;
@@ -105,7 +115,6 @@ h2 {
             }
 
             img {
-                box-shadow: -20px 20px 0px 0px variables.$turqoiseBlue;
                 transform: translate(73px, 0);
             }
         }
@@ -187,11 +196,11 @@ h2 {
             width: 40%;
         }
 
-        .imgBorderR {
+        .quadImg1 {
             transform: translate(0px, -10%);
         }
 
-        .imgBorderL {
+        .quadImg2 {
             transform: translate(0px, 10%);
         }
     }
@@ -255,7 +264,7 @@ h2 {
         padding-right: 50%;
     }
 
-    // This brings the comment section into proper formatting with the  blog article above
+    // This brings the comment section into proper formatting with the blog article above
     .commentFormat {
         padding-left: 15%;
         padding-right: 45%;
@@ -263,6 +272,9 @@ h2 {
     
     
     .blogContainer{
+        border-right: 20px solid variables.$turqoiseBlue;
+        border-bottom: 20px solid variables.$turqoiseBlue;
+
         // This brings the blog text up in order to keep it properly formatted with the image above
         .blogTextContainer {
             transform: translate(0, -100px);
@@ -275,17 +287,38 @@ h2 {
         // This positions the image so that it overlaps with the header
         .blogImg {
             width: 100%;
-            transform: translate(0px, -20%);
+            transform: translate(0px, -40%);
         }
     }
 
-    .commentTextContainer {
+    h4 {
+        padding: 60px 0 60px 0;
     }
 
+    .commentContainer {
+        display: flex;
+        padding-left: 50px;
+
+        img {
+            transform: translate(0px, 20px);
+            width: 90px;
+            height: 90px;
+        }
+
+        .commentTextContainer {
+            display: flex;
+            flex-direction: column;
+            padding-left: 50px;
+
+            // .timestamp {
+            //     padding-top: 0px;
+            // }
+        }
+    }
 
     .sidebar {
         width: 20%;
-        transform: translate(400%, -180%);
+        transform: translate(400%, -300%);
         
         img {
             width: 95%;

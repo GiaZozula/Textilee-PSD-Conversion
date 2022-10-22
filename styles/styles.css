@@ -372,6 +372,16 @@ footer p {
   margin: 0;
 }
 
+.imgBorderL {
+  -webkit-box-shadow: -20px 20px 0px 0px #0CADC0;
+          box-shadow: -20px 20px 0px 0px #0CADC0;
+}
+
+.imgBorderR {
+  -webkit-box-shadow: 20px 20px 0px 0px #0CADC0;
+          box-shadow: 20px 20px 0px 0px #0CADC0;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,8 +456,6 @@ h2 {
   padding-bottom: 30px;
 }
 .index .learnBG .learnContainer img {
-  -webkit-box-shadow: -20px 20px 0px 0px #0CADC0;
-          box-shadow: -20px 20px 0px 0px #0CADC0;
   -webkit-transform: translate(73px, 0);
           transform: translate(73px, 0);
 }
@@ -536,11 +544,11 @@ h2 {
   display: flex;
   width: 40%;
 }
-.index .quadrantContainer .imgBorderR {
+.index .quadrantContainer .quadImg1 {
   -webkit-transform: translate(0px, -10%);
           transform: translate(0px, -10%);
 }
-.index .quadrantContainer .imgBorderL {
+.index .quadrantContainer .quadImg2 {
   -webkit-transform: translate(0px, 10%);
           transform: translate(0px, 10%);
 }
@@ -588,6 +596,10 @@ h2 {
   padding-left: 15%;
   padding-right: 45%;
 }
+.blog .blogContainer {
+  border-right: 20px solid #0CADC0;
+  border-bottom: 20px solid #0CADC0;
+}
 .blog .blogContainer .blogTextContainer {
   -webkit-transform: translate(0, -100px);
           transform: translate(0, -100px);
@@ -597,13 +609,38 @@ h2 {
 }
 .blog .blogContainer .blogImg {
   width: 100%;
-  -webkit-transform: translate(0px, -20%);
-          transform: translate(0px, -20%);
+  -webkit-transform: translate(0px, -40%);
+          transform: translate(0px, -40%);
+}
+.blog h4 {
+  padding: 60px 0 60px 0;
+}
+.blog .commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+}
+.blog .commentContainer img {
+  -webkit-transform: translate(0px, 20px);
+          transform: translate(0px, 20px);
+  width: 90px;
+  height: 90px;
+}
+.blog .commentContainer .commentTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 50px;
 }
 .blog .sidebar {
   width: 20%;
-  -webkit-transform: translate(400%, -180%);
-          transform: translate(400%, -180%);
+  -webkit-transform: translate(400%, -300%);
+          transform: translate(400%, -300%);
 }
 .blog .sidebar img {
   width: 95%;
