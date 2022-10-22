@@ -74,19 +74,23 @@
                 </div> <!-- end of commentTextContainer -->
             </div> <!-- end of commentContainer -->
         
-            <!-- Form -->
-            <form action="submit">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name">
+        <!-- Form -->
+        <div class="formBG">
+            <form action="https://formspree.io/f/mgeqljkr" method="POST" class="contactForm wrapper" name="contactForm">
 
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" placeholder="Email address">
+                <div class="formWrap">
+                    <label for="name" class="formInput sr-only">Enter your name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required="true">
 
-                <label for="message">Message</label>
-                <input type="text" name="message" id="message" placeholder="Message">
+                    <label for="email" class="formInput sr-only">Enter your email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" required="true">
+                </div>
+                <label for="message" class="sr-only">Enter your comment</label>
+                <textarea name="userFeedback" id="message" placeholder="Comment" required="true"cols="30" rows="10" minlength="5" maxlength="200"></textarea>
 
-                <button class="buttonStyle">submit</button>
-            </form>       
+                <button type="submit" class="buttonStyle">Comment</button>
+            </form>
+        </div>
         </section>
 
         <!-- Sidebar -->
