@@ -338,30 +338,30 @@ h2 {
 
         .formBG {
                 background-color: variables.$teal;
-                width: 50%;
-                transform: translate(260px, -241px);
+                width: 51%;
+                transform: translate(240px, -240px);
                 padding: 50px 20px 55px 20px;
             }
 
         .contactInfoContainer {
-            padding: 10% 10% 0 0;
+            padding: 5% 10% 0 0;
             width: 30%;
             margin: 0;
         }
+
+        .socials {
+            display: flex;
+                
+                i {
+                padding: 0 25px 10px 0;
+            }
+         }
+
     }
 
     address {
         font-style: normal;
         line-height: normal;
-
-        // .socials {
-        //     display: flex;
-
-        //     i {
-        //         padding-right: 60px;
-        
-        //     }
-        // }
 
         .infoEmail {
             padding: 15px 0px 20px 0px;
@@ -369,6 +369,7 @@ h2 {
 
         p {
             margin: 0;
+            line-height: 28px;
         }
     }
 

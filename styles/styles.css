@@ -645,15 +645,23 @@ h2 {
 }
 .contact main .formBG {
   background-color: #21404F;
-  width: 50%;
-  -webkit-transform: translate(260px, -241px);
-          transform: translate(260px, -241px);
+  width: 51%;
+  -webkit-transform: translate(240px, -240px);
+          transform: translate(240px, -240px);
   padding: 50px 20px 55px 20px;
 }
 .contact main .contactInfoContainer {
-  padding: 10% 10% 0 0;
+  padding: 5% 10% 0 0;
   width: 30%;
   margin: 0;
+}
+.contact main .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact main .socials i {
+  padding: 0 25px 10px 0;
 }
 .contact address {
   font-style: normal;
@@ -664,6 +672,7 @@ h2 {
 }
 .contact address p {
   margin: 0;
+  line-height: 28px;
 }
 
 .contactForm {
