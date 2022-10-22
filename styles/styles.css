@@ -411,6 +411,11 @@ footer p {
   border-bottom: 2px solid #0CADC0;
 }
 
+.designH1 {
+  padding-bottom: 0%;
+  padding-top: 10%;
+}
+
 ul {
   list-style: none;
 }
@@ -572,7 +577,6 @@ h2 {
 
 .blog header {
   background-image: url("../assets/images/blog-header.jpg");
-  background-position: bottom -100px;
   background-repeat: no-repeat;
   padding-bottom: 20%;
   background-size: cover;
@@ -609,8 +613,8 @@ h2 {
 }
 .blog .blogContainer .blogImg {
   width: 100%;
-  -webkit-transform: translate(0px, -40%);
-          transform: translate(0px, -40%);
+  -webkit-transform: translate(0px, -25%);
+          transform: translate(0px, -25%);
 }
 .blog h4 {
   padding: 60px 0 60px 0;
@@ -639,8 +643,8 @@ h2 {
 }
 .blog .sidebar {
   width: 20%;
-  -webkit-transform: translate(400%, -300%);
-          transform: translate(400%, -300%);
+  -webkit-transform: translate(400%, -285%);
+          transform: translate(400%, -285%);
 }
 .blog .sidebar img {
   width: 95%;
@@ -665,7 +669,6 @@ h2 {
 
 .contact header {
   background-image: url("../assets/images/contact-header.jpg");
-  background-position: bottom -100px;
   background-repeat: no-repeat;
   padding-bottom: 20%;
   background-size: cover;

@@ -60,6 +60,12 @@ footer {
         }
 }
 
+
+.designH1 {
+    padding-bottom: 0%;
+    padding-top: 10%;
+}
+
 ul {
     list-style: none;
 }
@@ -236,13 +242,13 @@ h2 {
 
     header {
         background-image: url("../assets/images/blog-header.jpg");
-        background-position: bottom -100px;
         background-repeat: no-repeat;
         padding-bottom: 20%;
         background-size: cover;
     }
 
     main {
+        // margin-top: -10%;
         background-color: variables.$lightSkyBlue;
     }
 
@@ -287,7 +293,7 @@ h2 {
         // This positions the image so that it overlaps with the header
         .blogImg {
             width: 100%;
-            transform: translate(0px, -40%);
+            transform: translate(0px, -25%);
         }
     }
 
@@ -318,7 +324,7 @@ h2 {
 
     .sidebar {
         width: 20%;
-        transform: translate(400%, -300%);
+        transform: translate(400%, -285%);
         
         img {
             width: 95%;
@@ -357,7 +363,6 @@ h2 {
 
     header {
         background-image: url("../assets/images/contact-header.jpg");
-        background-position: bottom -100px;
         background-repeat: no-repeat;
         padding-bottom: 20%;
         background-size: cover;
