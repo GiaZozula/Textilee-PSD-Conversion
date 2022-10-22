@@ -6,10 +6,18 @@
 
     .formWrap {
         display: flex;
+        // width: 50%;
+        justify-content: space-between;
+    
+        input[type="text"], input[type="email"] {
+            width: 48%;
+
+        }
+    
     }
 
     input, textarea {
-        padding: 30px 15px 30px 15px;
+        padding: 50px 15px 30px 30px;
         border: none;
         margin-bottom: 40px;
         color: variables.$white;
@@ -38,5 +46,6 @@
         padding-bottom: 10px;
         border: none;
         background-color: variables.$lighterBlue;
+        color: variables.$blackTwo;
     }
 }
