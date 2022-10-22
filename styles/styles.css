@@ -588,6 +588,10 @@ h2 {
   padding-left: 15%;
   padding-right: 45%;
 }
+.blog .blogContainer .blogTextContainer {
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
+}
 .blog .blogContainer .timestamp {
   color: #CCEDFB;
 }

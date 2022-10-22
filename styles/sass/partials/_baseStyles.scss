@@ -262,18 +262,27 @@ h2 {
         padding-right: 45%;
     }
     
-
+    
     .blogContainer{
+        // This brings the blog text up in order to keep it properly formatted with the image above
+        .blogTextContainer {
+            transform: translate(0, -100px);
+        }
 
-            .timestamp {
-                color: variables.$lightSkyBlue;
-            }
+        .timestamp {
+            color: variables.$lightSkyBlue;
+        }
 
-            .blogImg {
-                    width: 100%;
-                    transform: translate(0px, -20%);
-                }
+        // This positions the image so that it overlaps with the header
+        .blogImg {
+            width: 100%;
+            transform: translate(0px, -20%);
+        }
     }
+
+    .commentTextContainer {
+    }
+
 
     .sidebar {
         width: 20%;
