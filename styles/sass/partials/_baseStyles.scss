@@ -1,8 +1,10 @@
 @use './variables';
 
-// Base Styles for all pages
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Base Styles for all pages ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// wrapper (same as in the notes, but i did re-type it out manually!)
+// wrapper (same as in the notes, but I swear, I did re-type it out manually!)
 .wrapper {
     max-width: 1260px;
     width: 90%; 
@@ -13,6 +15,39 @@ body {
     background-color: variables.$silver;
 }
 
+// navbar to appear on all pages
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 2%;
+
+    .navBarItems {
+        display: flex;
+        width: 100%;
+        justify-content: right;
+
+        li {
+            padding: 10px 0px 10px 50px;
+
+            a {
+
+                &:hover,
+                &:focus {
+                    border-bottom: 2px solid variables.$turqoiseBlue;
+                }
+            }
+        }
+    }
+}
+
+// Make sure all buttons get a cursor 
+.buttonStyle {
+    cursor: pointer
+}
+
+// Same footer for all pages
 footer {
     background-color: variables.$blackTwo;
     color: variables.$white;
@@ -24,7 +59,6 @@ footer {
     }
 }
 
-
 // Image shadows
 .imgBorderL {
     box-shadow: -20px 20px 0px 0px variables.$turqoiseBlue;
@@ -34,59 +68,34 @@ footer {
     box-shadow: 20px 20px 0px 0px variables.$turqoiseBlue;
 }
 
-
-// navbar to appear on all pages
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-top: 2%;
-
-    .navBarItems {
-            display: flex;
-            width: 100%;
-            justify-content: right;          
-
-            li {
-                padding: 10px 0px 10px 50px;
-                a {
-
-                    &:hover, &:focus {
-                        border-bottom: 2px solid variables.$turqoiseBlue;
-                    }
-                }
-            }
-        }
-}
-
-
-.designH1 {
-    padding-bottom: 0%;
-    padding-top: 10%;
-}
-
-ul {
-    list-style: none;
-}
-
-
+// ul, li, a, input reset
 ul, li, a, input {
     padding: 0;
     margin: 0;
 }
 
+// further ul reset
+ul {
+    list-style: none;
+}
 
+// General h2 positioning 
 h2 {
     margin: 0;
     padding-left: calc(7.5% + 20px);
     padding-left: 0;
     padding-right: 0;
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 
+// some minor re-positioning of the h2's (.designH1) for the Blog and Contact pages
+.designH1 {
+    padding-bottom: 0%;
+    padding-top: 10%;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~ Homepage ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .index {
 
@@ -95,6 +104,12 @@ h2 {
         background-position: right;
         background-repeat: no-repeat;
         padding-bottom: 22%;
+
+        // further positioning the "Textiles for all projects"
+        .designH2 {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
 
         img {
             position: absolute;
@@ -174,7 +189,6 @@ h2 {
         }
     }
 
-
     // Quadrant Image & Text Section
 
     .quadrantContainer {
@@ -235,8 +249,9 @@ h2 {
     }
 } 
 
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~ Blog ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .blog {
 
@@ -315,10 +330,6 @@ h2 {
             display: flex;
             flex-direction: column;
             padding-left: 50px;
-
-            // .timestamp {
-            //     padding-top: 0px;
-            // }
         }
     }
 
@@ -356,8 +367,9 @@ h2 {
 }
 
 
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~ Contact ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .contact {
 
@@ -377,7 +389,7 @@ h2 {
         .formBG {
                 background-color: variables.$teal;
                 width: 51%;
-                transform: translate(240px, -240px);
+                transform: translate(240px, -180px);
                 padding: 50px 20px 55px 20px;
 
                 //Form stylings specific to this page

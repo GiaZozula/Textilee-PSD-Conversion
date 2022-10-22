@@ -362,26 +362,6 @@ body {
   background-color: #f5f5f5;
 }
 
-footer {
-  background-color: #161515;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 0.5%;
-}
-footer p {
-  margin: 0;
-}
-
-.imgBorderL {
-  -webkit-box-shadow: -20px 20px 0px 0px #0CADC0;
-          box-shadow: -20px 20px 0px 0px #0CADC0;
-}
-
-.imgBorderR {
-  -webkit-box-shadow: 20px 20px 0px 0px #0CADC0;
-          box-shadow: 20px 20px 0px 0px #0CADC0;
-}
-
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,13 +391,28 @@ footer p {
   border-bottom: 2px solid #0CADC0;
 }
 
-.designH1 {
-  padding-bottom: 0%;
-  padding-top: 10%;
+.buttonStyle {
+  cursor: pointer;
 }
 
-ul {
-  list-style: none;
+footer {
+  background-color: #161515;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0.5%;
+}
+footer p {
+  margin: 0;
+}
+
+.imgBorderL {
+  -webkit-box-shadow: -20px 20px 0px 0px #0CADC0;
+          box-shadow: -20px 20px 0px 0px #0CADC0;
+}
+
+.imgBorderR {
+  -webkit-box-shadow: 20px 20px 0px 0px #0CADC0;
+          box-shadow: 20px 20px 0px 0px #0CADC0;
 }
 
 ul, li, a, input {
@@ -425,13 +420,20 @@ ul, li, a, input {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 h2 {
   margin: 0;
   padding-left: calc(7.5% + 20px);
   padding-left: 0;
   padding-right: 0;
-  padding-top: 5%;
-  padding-bottom: 5%;
+}
+
+.designH1 {
+  padding-bottom: 0%;
+  padding-top: 10%;
 }
 
 .index header {
@@ -439,6 +441,10 @@ h2 {
   background-position: right;
   background-repeat: no-repeat;
   padding-bottom: 22%;
+}
+.index header .designH2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .index header img {
   position: absolute;
@@ -686,8 +692,8 @@ h2 {
 .contact main .formBG {
   background-color: #21404F;
   width: 51%;
-  -webkit-transform: translate(240px, -240px);
-          transform: translate(240px, -240px);
+  -webkit-transform: translate(240px, -180px);
+          transform: translate(240px, -180px);
   padding: 50px 20px 55px 20px;
 }
 .contact main .formBG .contactForm input, .contact main .formBG .contactForm textarea {
@@ -778,4 +784,121 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
+}
+
+.buttonStyle:hover, .buttonStyle:focus {
+  -webkit-animation: animation1 2s ease-in-out 0s infinite normal none;
+          animation: animation1 2s ease-in-out 0s infinite normal none;
+}
+
+.galleryContainer img:hover {
+  -webkit-animation: animation2 20ms ease-in-out 0s infinite alternate none, animation3 4s ease-in-out 500ms infinite alternate none;
+          animation: animation2 20ms ease-in-out 0s infinite alternate none, animation3 4s ease-in-out 500ms infinite alternate none;
+  cursor: cell;
+}
+
+@-webkit-keyframes animation1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animation1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes animation2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: saturate(300%);
+            filter: saturate(300%);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+@keyframes animation2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: saturate(300%);
+            filter: saturate(300%);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+@-webkit-keyframes animation3 {
+  0% {
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: saturate(300%);
+            filter: saturate(300%);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+@keyframes animation3 {
+  0% {
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: saturate(300%);
+            filter: saturate(300%);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
 }
