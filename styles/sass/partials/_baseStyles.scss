@@ -5,7 +5,7 @@
 // wrapper (same as in the notes, but i did re-type it out manually!)
 .wrapper {
     max-width: 1260px;
-    width: 90%;
+    width: 90%; 
     margin: 0 auto;
 }
 
@@ -237,21 +237,37 @@ h2 {
             background-size: cover;
     }
 
+
+    // this connects some styles of the blog post with the aside side bar
     .blogStyles {
         color: variables.$white;
         background-color: variables.$teal;
     }
 
-    .blogContainer{
+    // Setting the width, mostly to get the teal background of the blog post properly set up
+    .blogStyles, .blogFormat {
         width: 60%;
+    }
+
+    // This creates other problems which require an override in order to get the content of the blog article to be properly formatted in coordination with the comment section
+    .blogFormat {
+        width: 140%;
+        padding-left: 25%;
+        padding-right: 50%;
+    }
+
+    // This brings the comment section into proper formatting with the  blog article above
+    .commentFormat {
+        padding-left: 15%;
+        padding-right: 45%;
+    }
+    
+
+    .blogContainer{
 
             .timestamp {
                 color: variables.$lightSkyBlue;
             }
-
-            // p {
-            //     color: variables.$white;
-            // } 
 
             .blogImg {
                     width: 100%;

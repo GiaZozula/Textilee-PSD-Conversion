@@ -576,8 +576,17 @@ h2 {
   color: #FFFFFF;
   background-color: #21404F;
 }
-.blog .blogContainer {
+.blog .blogStyles, .blog .blogFormat {
   width: 60%;
+}
+.blog .blogFormat {
+  width: 140%;
+  padding-left: 25%;
+  padding-right: 50%;
+}
+.blog .commentFormat {
+  padding-left: 15%;
+  padding-right: 45%;
 }
 .blog .blogContainer .timestamp {
   color: #CCEDFB;
