@@ -632,12 +632,38 @@ h2 {
   background-repeat: no-repeat;
   padding-bottom: 20%;
   background-size: cover;
+  margin-bottom: -50px;
 }
 .contact main {
   background-color: #CCEDFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contact main .formBG {
   background-color: #21404F;
+  width: 50%;
+  -webkit-transform: translate(260px, -241px);
+          transform: translate(260px, -241px);
+  padding: 50px 20px 55px 20px;
+}
+.contact main .contactInfoContainer {
+  padding: 10% 10% 0 0;
+  width: 30%;
+  margin: 0;
+}
+.contact address {
+  font-style: normal;
+  line-height: normal;
+}
+.contact address .infoEmail {
+  padding: 15px 0px 20px 0px;
+}
+.contact address p {
+  margin: 0;
 }
 
 .contactForm {
