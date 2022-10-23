@@ -4,16 +4,15 @@
 
 // Got distracted from doing actual work and added some stupid animations for fun
 
-// Modified some things I generated from https: //www.doozytools.com/dev-tools/css-animation-generator
+// Modified some keyframes I generated from https: //www.doozytools.com/dev-tools/css-animation-generator
 
 .buttonStyle:hover, .buttonStyle:focus, {
     animation: animation1 2s ease-in-out 0s infinite normal none;
-    ;
 }
 
 .galleryContainer img:hover {
     animation: animation2 20ms ease-in-out 0s infinite alternate none, animation3 4s ease-in-out 500ms infinite alternate none;
-    cursor: cell;
+    cursor: no-drop;
 }
 
 

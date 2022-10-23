@@ -93,6 +93,20 @@ h2 {
     padding-top: 10%;
 }
 
+// .skip-link attributes copied from the notes
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~ Homepage ~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,15 +118,12 @@ h2 {
         background-position: right;
         background-repeat: no-repeat;
         padding-bottom: 22%;
+        
 
         // further positioning the "Textiles for all projects"
         .designH2 {
             padding-top: 5%;
             padding-bottom: 5%;
-        }
-
-        img {
-            position: absolute;
         }
     }
 
@@ -120,11 +131,21 @@ h2 {
 
     .learnBG {
         background-color: variables.$lightSkyBlue;
-        padding-top: 12%;
         padding-bottom: 6%;
+
+        .scissorsContainer {
+            display: flex;
+
+            .scissors {
+                position: absolute;
+                width: 40%;
+                top: 35%;
+            }
+        }
 
         .learnContainer {
             display: flex;
+            padding-top: 10%;
 
             .learnColumnContainer {
                 padding-right: 15%;
@@ -136,7 +157,8 @@ h2 {
             }
 
             img {
-                transform: translate(73px, 0);
+                translate: 73px;
+                height: 100%;
             }
         }
     }
@@ -228,7 +250,7 @@ h2 {
     //Banner Background
     .bannerBG   {
         display: block;
-        padding-bottom: 20%;
+        padding-bottom: 30%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -298,7 +320,8 @@ h2 {
 
         // This brings the blog text up in order to keep it properly formatted with the image above
         .blogTextContainer {
-            transform: translate(0, -100px);
+            margin-top: -7%;
+            padding-bottom: 7%;
         }
 
         .timestamp {
@@ -316,26 +339,33 @@ h2 {
         padding: 60px 0 60px 0;
     }
 
-    .commentContainer {
-        display: flex;
-        padding-left: 50px;
+    .commentSectionContainer {
+        padding-bottom: 5%;
 
-        img {
-            transform: translate(0px, 20px);
-            width: 90px;
-            height: 90px;
-        }
-
-        .commentTextContainer {
+        .commentContainer {
             display: flex;
-            flex-direction: column;
             padding-left: 50px;
+
+            img {
+                transform: translate(0px, 20px);
+                width: 90px;
+                height: 90px;
+            }
+
+            .commentTextContainer {
+                display: flex;
+                flex-direction: column;
+                padding-left: 50px;
+            }
         }
     }
 
     .sidebar {
+        position: absolute;
+        top: 90%;
+        left: 80%;
         width: 20%;
-        transform: translate(400%, -285%);
+        // transform: translate(400%, -285%);
         
         img {
             width: 95%;
@@ -362,8 +392,6 @@ h2 {
         }
     }
 
-
-
 }
 
 
@@ -389,7 +417,7 @@ h2 {
         .formBG {
                 background-color: variables.$teal;
                 width: 51%;
-                transform: translate(240px, -180px);
+                transform: translate(24%, -24%);
                 padding: 50px 20px 55px 20px;
 
                 //Form stylings specific to this page

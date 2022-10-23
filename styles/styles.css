@@ -436,6 +436,19 @@ h2 {
   padding-top: 10%;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 .index header {
   background-image: url("../assets/images/header-home.jpg");
   background-position: right;
@@ -446,18 +459,25 @@ h2 {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.index header img {
-  position: absolute;
-}
 .index .learnBG {
   background-color: #CCEDFB;
-  padding-top: 12%;
   padding-bottom: 6%;
+}
+.index .learnBG .scissorsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.index .learnBG .scissorsContainer .scissors {
+  position: absolute;
+  width: 40%;
+  top: 35%;
 }
 .index .learnBG .learnContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 10%;
 }
 .index .learnBG .learnContainer .learnColumnContainer {
   padding-right: 15%;
@@ -467,8 +487,8 @@ h2 {
   padding-bottom: 30px;
 }
 .index .learnBG .learnContainer img {
-  -webkit-transform: translate(73px, 0);
-          transform: translate(73px, 0);
+  translate: 73px;
+  height: 100%;
 }
 .index .galleryBG {
   background-color: #21404F;
@@ -565,7 +585,7 @@ h2 {
 }
 .index .bannerBG {
   display: block;
-  padding-bottom: 20%;
+  padding-bottom: 30%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -611,8 +631,8 @@ h2 {
   border-bottom: 20px solid #0CADC0;
 }
 .blog .blogContainer .blogTextContainer {
-  -webkit-transform: translate(0, -100px);
-          transform: translate(0, -100px);
+  margin-top: -7%;
+  padding-bottom: 7%;
 }
 .blog .blogContainer .timestamp {
   color: #CCEDFB;
@@ -625,19 +645,22 @@ h2 {
 .blog h4 {
   padding: 60px 0 60px 0;
 }
-.blog .commentContainer {
+.blog .commentSectionContainer {
+  padding-bottom: 5%;
+}
+.blog .commentSectionContainer .commentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 50px;
 }
-.blog .commentContainer img {
+.blog .commentSectionContainer .commentContainer img {
   -webkit-transform: translate(0px, 20px);
           transform: translate(0px, 20px);
   width: 90px;
   height: 90px;
 }
-.blog .commentContainer .commentTextContainer {
+.blog .commentSectionContainer .commentContainer .commentTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,9 +671,10 @@ h2 {
   padding-left: 50px;
 }
 .blog .sidebar {
+  position: absolute;
+  top: 90%;
+  left: 80%;
   width: 20%;
-  -webkit-transform: translate(400%, -285%);
-          transform: translate(400%, -285%);
 }
 .blog .sidebar img {
   width: 95%;
@@ -692,8 +716,8 @@ h2 {
 .contact main .formBG {
   background-color: #21404F;
   width: 51%;
-  -webkit-transform: translate(240px, -180px);
-          transform: translate(240px, -180px);
+  -webkit-transform: translate(24%, -24%);
+          transform: translate(24%, -24%);
   padding: 50px 20px 55px 20px;
 }
 .contact main .formBG .contactForm input, .contact main .formBG .contactForm textarea {
@@ -794,7 +818,7 @@ h2 {
 .galleryContainer img:hover {
   -webkit-animation: animation2 20ms ease-in-out 0s infinite alternate none, animation3 4s ease-in-out 500ms infinite alternate none;
           animation: animation2 20ms ease-in-out 0s infinite alternate none, animation3 4s ease-in-out 500ms infinite alternate none;
-  cursor: cell;
+  cursor: no-drop;
 }
 
 @-webkit-keyframes animation1 {
@@ -901,4 +925,13 @@ h2 {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
   }
+}
+@media (max-width: 1000px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+}
+@media (max-width: 500px) {
+  /* all of our styles for MOBILE devices will go within this breakpoint */
 }
