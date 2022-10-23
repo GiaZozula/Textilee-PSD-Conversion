@@ -1,0 +1,162 @@
+@use './variables';
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Homepage ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.index {
+
+    header {
+        background-image: url("../assets/images/header-home.jpg");
+        background-position: right;
+
+        // further positioning the "Textiles for all projects"
+        .designH2 {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+
+    // Learn New Techniques Section
+
+    .learnBG {
+        background-color: variables.$lightSkyBlue;
+        padding-bottom: 6%;
+
+        .scissorsContainer {
+            display: flex;
+
+            .scissors {
+                position: absolute;
+                width: 40%;
+                top: 35%;
+            }
+        }
+
+        .learnContainer {
+            display: flex;
+            padding-top: 10%;
+
+            .learnColumnContainer {
+                padding-right: 15%;
+                width: 70%;
+
+                p {
+                    padding-bottom: 30px;
+                }
+            }
+
+            img {
+                translate: 73px;
+                height: 100%;
+            }
+        }
+    }
+
+    // Gallery Section 
+    .galleryBG {
+        background-color: variables.$teal;
+        padding-top: 6%;
+        padding-bottom: 6%;
+
+        .galleryContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 31%;
+        }
+    }
+
+    // Other Pages Section
+    .otherBG {
+        background-color: variables.$lightSkyBlue;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        .otherPagesContainer {
+            display: flex;
+            flex-wrap: wrap;
+
+            .otherPages {
+                width: 50%;
+                padding-left: 5%;
+
+                span {
+                    margin-left: -100px;
+                    margin-right: -15px;
+                    padding-right: 10px;
+                    padding-left: 100px;
+                    padding-top: 7px;
+                    display: flex;
+                    font-size: 1em;
+                    color: variables.$turqoiseBlue;
+                }
+
+                .otherTitle {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    // Quadrant Image & Text Section
+
+    .quadrantContainer {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: variables.$teal;
+        color: variables.$white;
+        gap: 10%;
+
+        div {
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+
+            .buttonStyle {
+                color: variables.$blackTwo;
+                background-color: variables.$lighterBlue;
+            }
+        }
+
+        img {
+            display: flex;
+            width: 40%;
+        }
+
+        .quadImg1 {
+            transform: translate(0px, -10%);
+        }
+
+        .quadImg2 {
+            transform: translate(0px, 10%);
+        }
+    }
+
+    //Banner Background
+    .bannerBG {
+        display: block;
+        padding-bottom: 30%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/banner.jpg");
+    }
+
+
+    //Search Section
+    .searchMainContainer {
+        background-color: variables.$lightSkyBlue;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        text-align: center;
+
+        p {
+            padding-bottom: 3%;
+        }
+    }
+}

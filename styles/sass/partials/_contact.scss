@@ -1,0 +1,70 @@
+@use './variables';
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Contact ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.contact {
+
+    header {
+        background-image: url("../assets/images/contact-header.jpg");
+        background-size: cover;
+        margin-bottom: -50px;
+    }
+
+    main {
+        background-color: variables.$lightSkyBlue;
+        display: flex;
+        justify-content: space-between;
+
+        .formBG {
+            background-color: variables.$teal;
+            width: 51%;
+            transform: translate(24%, -24%);
+            padding: 50px 20px 55px 20px;
+
+            //Form stylings specific to this page
+            .contactForm {
+
+                input,
+                textarea {
+                    color: variables.$white;
+                }
+
+                button {
+                    background-color: variables.$lighterBlue;
+                    color: variables.$blackTwo;
+                }
+            }
+        }
+
+        .contactInfoContainer {
+            padding: 5% 10% 0 0;
+            width: 30%;
+            margin: 0;
+        }
+
+        .socials {
+            display: flex;
+
+            i {
+                padding: 0 25px 10px 0;
+            }
+        }
+
+    }
+
+    address {
+        font-style: normal;
+        line-height: normal;
+
+        .infoEmail {
+            padding: 15px 0px 20px 0px;
+        }
+
+        p {
+            margin: 0;
+            line-height: 28px;
+        }
+    }
+}

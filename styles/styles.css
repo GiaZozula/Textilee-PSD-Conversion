@@ -391,6 +391,11 @@ body {
   border-bottom: 2px solid #0CADC0;
 }
 
+header {
+  background-repeat: no-repeat;
+  padding-bottom: 20%;
+}
+
 .buttonStyle {
   cursor: pointer;
 }
@@ -426,7 +431,6 @@ ul {
 
 h2 {
   margin: 0;
-  padding-left: calc(7.5% + 20px);
   padding-left: 0;
   padding-right: 0;
 }
@@ -452,8 +456,6 @@ h2 {
 .index header {
   background-image: url("../assets/images/header-home.jpg");
   background-position: right;
-  background-repeat: no-repeat;
-  padding-bottom: 22%;
 }
 .index header .designH2 {
   padding-top: 5%;
@@ -603,8 +605,6 @@ h2 {
 
 .blog header {
   background-image: url("../assets/images/blog-header.jpg");
-  background-repeat: no-repeat;
-  padding-bottom: 20%;
   background-size: cover;
 }
 .blog main {
@@ -614,7 +614,8 @@ h2 {
   color: #FFFFFF;
   background-color: #21404F;
 }
-.blog .blogStyles, .blog .blogFormat {
+.blog .blogStyles,
+.blog .blogFormat {
   width: 60%;
 }
 .blog .blogFormat {
@@ -684,7 +685,8 @@ h2 {
 .blog .sidebar a {
   color: inherit;
 }
-.blog .sidebar p, .blog .sidebar ul {
+.blog .sidebar p,
+.blog .sidebar ul {
   margin-top: 0;
 }
 .blog .sidebar .sideContainer {
@@ -699,8 +701,6 @@ h2 {
 
 .contact header {
   background-image: url("../assets/images/contact-header.jpg");
-  background-repeat: no-repeat;
-  padding-bottom: 20%;
   background-size: cover;
   margin-bottom: -50px;
 }
@@ -720,7 +720,8 @@ h2 {
           transform: translate(24%, -24%);
   padding: 50px 20px 55px 20px;
 }
-.contact main .formBG .contactForm input, .contact main .formBG .contactForm textarea {
+.contact main .formBG .contactForm input,
+.contact main .formBG .contactForm textarea {
   color: #FFFFFF;
 }
 .contact main .formBG .contactForm button {
@@ -926,12 +927,9 @@ h2 {
             filter: hue-rotate(360deg);
   }
 }
-@media (max-width: 1000px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-}
 @media (max-width: 800px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
 }
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
 }

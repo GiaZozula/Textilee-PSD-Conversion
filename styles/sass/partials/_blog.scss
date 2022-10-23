@@ -1,0 +1,124 @@
+@use './variables';
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Blog ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.blog {
+
+    header {
+        background-image: url("../assets/images/blog-header.jpg");
+        background-size: cover;
+    }
+
+    main {
+        // margin-top: -10%;
+        background-color: variables.$lightSkyBlue;
+    }
+
+    // this connects some styles of the blog post with the aside side bar
+    .blogStyles {
+        color: variables.$white;
+        background-color: variables.$teal;
+    }
+
+    // Setting the width, mostly to get the teal background of the blog post properly set up
+    .blogStyles,
+    .blogFormat {
+        width: 60%;
+    }
+
+    // This creates other problems which require an override in order to get the content of the blog article to be properly formatted in coordination with the comment section
+    .blogFormat {
+        width: 140%;
+        padding-left: 25%;
+        padding-right: 50%;
+    }
+
+    // This brings the comment section into proper formatting with the blog article above
+    .commentFormat {
+        padding-left: 15%;
+        padding-right: 45%;
+    }
+
+
+    .blogContainer {
+        border-right: 20px solid variables.$turqoiseBlue;
+        border-bottom: 20px solid variables.$turqoiseBlue;
+
+        // This brings the blog text up in order to keep it properly formatted with the image above
+        .blogTextContainer {
+            margin-top: -7%;
+            padding-bottom: 7%;
+        }
+
+        .timestamp {
+            color: variables.$lightSkyBlue;
+        }
+
+        // This positions the image so that it overlaps with the header
+        .blogImg {
+            width: 100%;
+            transform: translate(0px, -25%);
+        }
+    }
+
+    h4 {
+        padding: 60px 0 60px 0;
+    }
+
+    .commentSectionContainer {
+        padding-bottom: 5%;
+
+        .commentContainer {
+            display: flex;
+            padding-left: 50px;
+
+            img {
+                transform: translate(0px, 20px);
+                width: 90px;
+                height: 90px;
+            }
+
+            .commentTextContainer {
+                display: flex;
+                flex-direction: column;
+                padding-left: 50px;
+            }
+        }
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        width: 20%;
+        // transform: translate(400%, -285%);
+
+        img {
+            width: 95%;
+            transform: translate(20px, -20px);
+        }
+
+        a {
+            color: inherit;
+        }
+
+        p,
+        ul {
+            margin-top: 0;
+        }
+
+        .sideContainer {
+            padding-left: 5%;
+            padding-bottom: 20px;
+        }
+
+        .sideList {
+            list-style-type: disc;
+            list-style-position: inside;
+            padding-bottom: 20px;
+        }
+    }
+
+}
