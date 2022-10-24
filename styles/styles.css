@@ -461,7 +461,6 @@ h2 {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-right: 45%;
-  border: 2px solid red;
 }
 .index .learnBG {
   background-color: #CCEDFB;
@@ -482,7 +481,6 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   padding-top: 25%;
-  border: 2px solid blue;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -652,7 +650,7 @@ h2 {
           transform: translate(0px, -25%);
 }
 .blog h4 {
-  padding: 60px 0 60px 0;
+  padding: 11% 0 11% 0;
 }
 .blog .commentSectionContainer {
   padding-bottom: 5%;
@@ -677,7 +675,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 50px;
+  padding-left: 6%;
 }
 .blog .sidebar {
   position: absolute;
@@ -687,30 +685,29 @@ h2 {
 }
 .blog .sidebar img {
   width: 95%;
-  -webkit-transform: translate(20px, -20px);
-          transform: translate(20px, -20px);
+  -webkit-transform: translate(5%, -5%);
+          transform: translate(5%, -5%);
 }
 .blog .sidebar a {
   color: inherit;
 }
-.blog .sidebar p,
-.blog .sidebar ul {
+.blog .sidebar p, .blog .sidebar ul {
   margin-top: 0;
 }
 .blog .sidebar .sideContainer {
   padding-left: 5%;
-  padding-bottom: 20px;
+  padding-bottom: 5%;
 }
 .blog .sidebar .sideList {
   list-style-type: disc;
   list-style-position: inside;
-  padding-bottom: 20px;
+  padding-bottom: 5%;
 }
 
 .contact header {
   background-image: url("../assets/images/contact-header.jpg");
   background-size: cover;
-  margin-bottom: -50px;
+  margin-bottom: -2%;
 }
 .contact main {
   background-color: #CCEDFB;
@@ -726,10 +723,9 @@ h2 {
   width: 51%;
   -webkit-transform: translate(24%, -24%);
           transform: translate(24%, -24%);
-  padding: 50px 20px 55px 20px;
+  padding: 2% 1% 2% 1%;
 }
-.contact main .formBG .contactForm input,
-.contact main .formBG .contactForm textarea {
+.contact main .formBG .contactForm input, .contact main .formBG .contactForm textarea {
   color: #FFFFFF;
 }
 .contact main .formBG .contactForm button {
@@ -747,18 +743,18 @@ h2 {
   display: flex;
 }
 .contact main .socials i {
-  padding: 0 25px 10px 0;
+  padding: 0 25px 8% 0;
 }
 .contact address {
   font-style: normal;
   line-height: normal;
 }
 .contact address .infoEmail {
-  padding: 15px 0px 20px 0px;
+  padding: 3% 0px 5% 0px;
 }
 .contact address p {
   margin: 0;
-  line-height: 28px;
+  line-height: 140%;
 }
 
 .contactForm {
@@ -782,9 +778,9 @@ h2 {
   width: 48%;
 }
 .contactForm input, .contactForm textarea {
-  padding: 50px 15px 30px 30px;
+  padding: 10% 2% 4% 4%;
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 5%;
   color: #1E1713;
   background-color: inherit;
   letter-spacing: inherit;
@@ -963,6 +959,16 @@ h2 {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
+  .contact .designH1 {
+    font-size: 2rem;
+  }
+  .contact .formBG {
+    font-size: 0.8rem;
+  }
+  .contact address p {
+    font-size: 0.8rem;
+    line-height: normal;
+  }
 }
 @media (max-width: 800px) {
   .navBar {
@@ -1104,5 +1110,16 @@ h2 {
   .searchSubContainer p {
     font-size: 0.8rem;
     letter-spacing: normal;
+  }
+  .contact .designH1 {
+    padding-top: 1%;
+    font-size: 1.75rem;
+  }
+  .contact .formBG {
+    font-size: 0.7rem;
+  }
+  .contact address p {
+    font-size: 0.6rem;
+    line-height: normal;
   }
 }

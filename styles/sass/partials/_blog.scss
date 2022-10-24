@@ -64,7 +64,7 @@
     }
 
     h4 {
-        padding: 60px 0 60px 0;
+        padding: 11% 0 11% 0;
     }
 
     .commentSectionContainer {
@@ -83,7 +83,7 @@
             .commentTextContainer {
                 display: flex;
                 flex-direction: column;
-                padding-left: 50px;
+                padding-left: 6%;
             }
         }
     }
@@ -93,31 +93,29 @@
         top: 90%;
         left: 80%;
         width: 20%;
-        // transform: translate(400%, -285%);
 
         img {
             width: 95%;
-            transform: translate(20px, -20px);
+            transform: translate(5%, -5%);
         }
 
         a {
             color: inherit;
         }
 
-        p,
-        ul {
+        p, ul {
             margin-top: 0;
         }
 
         .sideContainer {
             padding-left: 5%;
-            padding-bottom: 20px;
+            padding-bottom: 5%;
         }
 
         .sideList {
             list-style-type: disc;
             list-style-position: inside;
-            padding-bottom: 20px;
+            padding-bottom: 5%;
         }
     }
 

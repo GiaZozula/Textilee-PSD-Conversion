@@ -5,8 +5,10 @@
 
 // Some of this is not as dry as it could be and some of it repeats because I struggled to know when something wasn't working because of specificity. After getting stuck several times as a result of things lacking specificity I decided to just add extra code to ensure that I was targeting things as quickly as possible.
 
-
+// ~~~~~~~~~~~~~~
 // 1st breakpoint
+// ~~~~~~~~~~~~~~
+
 @media (max-width: 1000px) {
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,10 +54,28 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~ Contact ~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+.contact .designH1 {
+   font-size: 2rem;
 }
 
+.contact .formBG {
+    font-size: .8rem;
+}
+
+.contact address p {
+    font-size: .8rem;
+    line-height: normal; 
+}
+
+
+
+} // End of 1st
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // the penultimate breakpoint, likely for tablets
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 @media (max-width: 800px) {
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -220,6 +240,28 @@
         font-size: .8rem;
         letter-spacing: normal;
     }
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Contact ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.contact .designH1 {
+    padding-top: 1%;
+    font-size: 1.75rem;
+}
+
+.contact .formBG {
+    font-size: .7rem;
+}
+
+.contact address p {
+    font-size: .6rem;
+    line-height: normal;
+}
+
+// .contact .socials i {
+    
+// }
 
 }
 

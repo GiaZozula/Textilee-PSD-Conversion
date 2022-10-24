@@ -1,12 +1,13 @@
 @use './variables';
 
+// Form template used on the blog and contact pages
+
 .contactForm {
     display:flex;
     flex-direction: column;
 
     .formWrap {
         display: flex;
-        // width: 50%;
         justify-content: space-between;
     
         input[type="text"], input[type="email"] {
@@ -17,9 +18,9 @@
     }
 
     input, textarea {
-        padding: 50px 15px 30px 30px;
+        padding: 10% 2% 4% 4%;
         border: none;
-        margin-bottom: 40px;
+        margin-bottom: 5%;
         color: variables.$black;
         background-color: inherit;
         letter-spacing: inherit;

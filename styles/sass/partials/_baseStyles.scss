@@ -102,6 +102,7 @@ h2 {
     position: absolute;
     left: -1000px;
     top: 5px;
+    // uh oh I'm breaking the z-index rule but it was in the notes sooooo >:)
     z-index: 999;
     background: white;
     color: black;

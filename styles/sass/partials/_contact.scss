@@ -9,7 +9,7 @@
     header {
         background-image: url("../assets/images/contact-header.jpg");
         background-size: cover;
-        margin-bottom: -50px;
+        margin-bottom: -2%;
     }
 
     main {
@@ -21,13 +21,12 @@
             background-color: variables.$teal;
             width: 51%;
             transform: translate(24%, -24%);
-            padding: 50px 20px 55px 20px;
+            padding: 2% 1% 2% 1%;
 
             //Form stylings specific to this page
             .contactForm {
 
-                input,
-                textarea {
+                input, textarea {
                     color: variables.$white;
                 }
 
@@ -48,7 +47,7 @@
             display: flex;
 
             i {
-                padding: 0 25px 10px 0;
+                padding: 0 25px 8% 0;
             }
         }
 
@@ -59,12 +58,12 @@
         line-height: normal;
 
         .infoEmail {
-            padding: 15px 0px 20px 0px;
+            padding: 3% 0px 5% 0px;
         }
 
         p {
             margin: 0;
-            line-height: 28px;
+            line-height: 140%;
         }
     }
 }
