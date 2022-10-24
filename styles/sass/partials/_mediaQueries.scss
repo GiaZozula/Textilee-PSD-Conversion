@@ -1,13 +1,69 @@
-// <br>points ha ha
+@use './variables';
 
-@media (max-width: 1266px) {
-    
+// <br>points ha ha :cryingtearsofexhaustionemoji:
+
+// 1st breakpoint
+@media (max-width: 1000px) {
+
+    // Homepage media queries
+    .index {
+
+        header {
+            background-position: center;
+        }
+
+
+    }
+
+    // blog media queries
+
+
+
+
+
+    // contact media queries
+
 }
 
+// the penultimate breakpoint, likely for tablets
 @media (max-width: 800px) {
-    /* all of our styles for TABLET devices will go within this breakpoint */
+
+    // General styles
+
+    // navBar
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navBar .logo {
+        padding-top: 5%;
+        font-size: 2rem;
+    }
+
+    .navBar .navBarItems {
+            font-size: .8rem;
+            justify-content: center;
+    }
+
+    .navBar .navBarItems li {
+        
+        padding: 7% 2% 2% 2%;
+    }
+
+
+    // Homepage media queries
+    .index header .designH2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 2% 26% 0 0;
+    }
+
+    
+
 }
 
+//breakpoint the third, for teeny weeny devices
 @media (max-width: 320px) {
-    /* all of our styles for MOBILE devices will go within this breakpoint */
+
 }

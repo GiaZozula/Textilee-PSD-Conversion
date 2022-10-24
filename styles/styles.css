@@ -460,6 +460,8 @@ h2 {
 .index header .designH2 {
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-right: 45%;
+  border: 2px solid red;
 }
 .index .learnBG {
   background-color: #CCEDFB;
@@ -472,14 +474,18 @@ h2 {
 }
 .index .learnBG .scissorsContainer .scissors {
   position: absolute;
-  width: 40%;
+  width: 62%;
   top: 35%;
 }
 .index .learnBG .learnContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 10%;
+  padding-top: 25%;
+  border: 2px solid blue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .index .learnBG .learnContainer .learnColumnContainer {
   padding-right: 15%;
@@ -489,8 +495,9 @@ h2 {
   padding-bottom: 30px;
 }
 .index .learnBG .learnContainer img {
-  translate: 73px;
-  height: 100%;
+  translate: 13%;
+  width: 15rem;
+  height: 15rem;
 }
 .index .galleryBG {
   background-color: #21404F;
@@ -927,9 +934,37 @@ h2 {
             filter: hue-rotate(360deg);
   }
 }
-@media (max-width: 800px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
+@media (max-width: 1000px) {
+  .index header {
+    background-position: center;
+  }
 }
-@media (max-width: 320px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
+@media (max-width: 800px) {
+  .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navBar .logo {
+    padding-top: 5%;
+    font-size: 2rem;
+  }
+  .navBar .navBarItems {
+    font-size: 0.8rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar .navBarItems li {
+    padding: 7% 2% 2% 2%;
+  }
+  .index header .designH2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 2% 26% 0 0;
+  }
 }

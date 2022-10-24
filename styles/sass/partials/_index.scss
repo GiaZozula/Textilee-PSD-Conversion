@@ -14,7 +14,13 @@
         .designH2 {
             padding-top: 5%;
             padding-bottom: 5%;
+
+            // This is used to minimize breakpoints and have the page adjust automatically
+            padding-right: 45%;
+            border: 2px solid red;
+            
         }
+
     }
 
     // Learn New Techniques Section
@@ -28,14 +34,16 @@
 
             .scissors {
                 position: absolute;
-                width: 40%;
+                width: 62%;
                 top: 35%;
             }
         }
 
         .learnContainer {
             display: flex;
-            padding-top: 10%;
+            padding-top: 25%;
+            border: 2px solid blue;
+            justify-content: space-between;
 
             .learnColumnContainer {
                 padding-right: 15%;
@@ -47,8 +55,9 @@
             }
 
             img {
-                translate: 73px;
-                height: 100%;
+                translate: 13%;
+                width: 15rem;
+                height: 15rem;
             }
         }
     }
