@@ -2,6 +2,10 @@
 
 // <br>points ha ha :cryingtearsofexhaustionemoji:
 
+
+// Some of this is not as dry as it could be and some of it repeats because I struggled to know when something wasn't working because of specificity. After getting stuck several times as a result of things lacking specificity I decided to just add extra code to ensure that I was targeting things as quickly as possibe.
+
+
 // 1st breakpoint
 @media (max-width: 1000px) {
 
@@ -13,6 +17,27 @@
         }
 
 
+    }
+
+    .index .quadrantContainer {
+        flex-direction: column;
+    }
+
+    .index .quadrantContainer .quadImg1 {
+        transform: translate(0px, -20%);
+    }
+
+    .index .quadrantContainer .discoverContainer {
+        transform: translate(50%, -20%);
+    }
+
+    .index .quadrantContainer .newContainer {
+        transform: translate(-50%, 20%);
+    }
+
+    .index .quadrantContainer .quadImg2 {
+        transform: translate(0px, 20%);
+        align-self: flex-end;
     }
 
     // blog media queries
@@ -53,13 +78,132 @@
 
 
     // Homepage media queries
+
+    // Header
+
+    // need that specificityyyy
     .index header .designH2 {
         font-size: 2rem;
         line-height: 2.5rem;
         padding: 2% 26% 0 0;
     }
 
+    // Learn section
+    .index .learnBG .learnContainer {
+        flex-direction: column;
+
+        .learnColumnContainer {
+            width: 115%;
+        }
+
+        h3 {
+            padding-top: 10%;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
+        
+        p {
+            padding: 0%;
+            margin: 0;
+            font-size: .8rem;
+            letter-spacing: normal;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    // Gallery 
+    .galleryContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        .extraImg {
+            display: none;
+        }
+    }
+
+    // had to be EXTRA specific 
+    .index main .galleryImg {
+                width: 50%;
+                padding-bottom: 5%;
+    }
+
+
+    // Other Pages section
+    .index main .otherPagesContainer {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+
+        i {
+            display: none;
+        }
+
+        .designH3 {
+            padding-bottom: 0%;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            letter-spacing: 2px;
+        }
+
+        p {
+            margin: 2%;
+            padding-bottom: 2%;
+            font-size: .8rem;
+            letter-spacing: normal;
+        }
+    }
+
+    .index .otherBG .otherPagesContainer .otherPages {
+        width: 100%;
+    }
+
+    // Quadrant section
+
+    .index .quadrantContainer {
+        align-items: center;
+    }
     
+    .index .quadrantContainer div {
+        width: 80%;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .index .quadrantContainer .designH5 {
+        padding-top: 2%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .index .quadrantContainer p {
+        font-size: .8rem;
+        letter-spacing: normal;
+    }
+
+    .index .quadrantContainer .quadImg1 {
+        width: 60%;
+        transform: translate(0, -20%);
+    }
+        
+    .index .quadrantContainer .discoverContainer {
+        transform: translate(0 ,0);
+    }
+        
+    .index .quadrantContainer .newContainer {
+        transform: translate(0, 0);
+    }
+        
+    .index .quadrantContainer .quadImg2 {
+        display: none;
+    }
+
+    // Search by style 
+
 
 }
 
