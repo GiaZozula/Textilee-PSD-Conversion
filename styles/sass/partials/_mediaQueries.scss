@@ -3,20 +3,19 @@
 // <br>points ha ha :cryingtearsofexhaustionemoji:
 
 
-// Some of this is not as dry as it could be and some of it repeats because I struggled to know when something wasn't working because of specificity. After getting stuck several times as a result of things lacking specificity I decided to just add extra code to ensure that I was targeting things as quickly as possibe.
+// Some of this is not as dry as it could be and some of it repeats because I struggled to know when something wasn't working because of specificity. After getting stuck several times as a result of things lacking specificity I decided to just add extra code to ensure that I was targeting things as quickly as possible.
 
 
 // 1st breakpoint
 @media (max-width: 1000px) {
 
-    // Homepage media queries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Homepage ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     .index {
-
         header {
             background-position: center;
         }
-
-
     }
 
     .index .quadrantContainer {
@@ -40,20 +39,28 @@
         align-self: flex-end;
     }
 
-    // blog media queries
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Blog ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
 
 
-    // contact media queries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Contact ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 }
 
 // the penultimate breakpoint, likely for tablets
 @media (max-width: 800px) {
 
-    // General styles
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Base Styles for all pages ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     // navBar
     .navBar {
@@ -67,17 +74,18 @@
     }
 
     .navBar .navBarItems {
-            font-size: .8rem;
-            justify-content: center;
+        font-size: .8rem;
+        justify-content: center;
     }
 
     .navBar .navBarItems li {
-        
         padding: 7% 2% 2% 2%;
     }
 
 
-    // Homepage media queries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Homepage ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     // Header
 
@@ -127,8 +135,8 @@
 
     // had to be EXTRA specific 
     .index main .galleryImg {
-                width: 50%;
-                padding-bottom: 5%;
+        width: 50%;
+        padding-bottom: 5%;
     }
 
 
@@ -157,6 +165,7 @@
         }
     }
 
+    // not screwing around with specifcity anymore I'm too sleepy
     .index .otherBG .otherPagesContainer .otherPages {
         width: 100%;
     }
@@ -203,11 +212,18 @@
     }
 
     // Search by style 
+    .searchSubContainer .designH3 {
+        font-size: 1.5rem;
+    }
 
+    .searchSubContainer p {
+        font-size: .8rem;
+        letter-spacing: normal;
+    }
 
 }
 
-//breakpoint the third, for teeny weeny devices
+//breakpoint the third, for teeny weeny devices?
 @media (max-width: 320px) {
-
+// HOPE THIS STAYS EMPTY FOREVER
 }

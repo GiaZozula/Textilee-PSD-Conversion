@@ -1098,4 +1098,11 @@ h2 {
   .index .quadrantContainer .quadImg2 {
     display: none;
   }
+  .searchSubContainer .designH3 {
+    font-size: 1.5rem;
+  }
+  .searchSubContainer p {
+    font-size: 0.8rem;
+    letter-spacing: normal;
+  }
 }
