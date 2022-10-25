@@ -2,8 +2,12 @@
 
 // <br>points ha ha :cryingtearsofexhaustionemoji:
 
+// Initially I was attempting use as few breakpoints as possible, with the hope that I wouldn't even need a mobile specific design. However, I think I probably could have benefitted from one more round of simplification/media queries for mobile but I didn't have enough time! 
 
-// Some of this is not as dry as it could be and some of it repeats because I struggled to know when something wasn't working because of specificity. After getting stuck several times as a result of things lacking specificity I decided to just add extra code to ensure that I was targeting things as quickly as possible.
+// As I discussed with the class, my partner was in the emergency on Sunday night and therefore I didn't get any sleep sadly! Thankfully everything is okay, but that's the reason for this missing finesse.
+
+// ALSO a lot this is not as dry as it could be and a lot of it repeats because I struggled to know when something wasn't working because of specificity. After getting stuck several times as a result of things lacking specificity I decided to just add extra code to ensure that I was targeting things as quickly as possible. I'd love to know if there's a better way to deal with this issue!
+
 
 // ~~~~~~~~~~~~~~
 // 1st breakpoint
@@ -47,29 +51,44 @@
 // ~~~~~~~~~~ Blog ~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    .blog .designH1 {
+        font-size: 2rem;
+        padding-left: 10%;
+    }
 
+    .blog .designH4 {
+        font-size: 1.5rem;
+        padding-left: 5%;
+    }
 
+    .blog .formBG {
+        font-size: .8rem;
+    }
+
+    .blog .commentFormat {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~ Contact ~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.contact .designH1 {
-   font-size: 2rem;
-}
+    .contact .designH1 {
+    font-size: 2rem;
+    }
 
-.contact .formBG {
-    font-size: .8rem;
-}
+    .contact .formBG {
+        font-size: .8rem;
+    }
 
-.contact address p {
-    font-size: .8rem;
-    line-height: normal; 
-}
-
-
+    .contact address p {
+        font-size: .8rem;
+        line-height: normal; 
+    }
 
 } // End of 1st
+
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,6 +100,11 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~ Base Styles for all pages ~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    // This helped with some overflow issues, but I still ended up with some white space at the bottom of my contact page (even after attempting overflow-y:clip). I imagine my margins are messed up or something, but not sure!
+    .index, .blog, .contact {
+        overflow-x: clip;
+    }
 
     // navBar
     .navBar {
@@ -242,30 +266,75 @@
     }
 
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// ~~~~~~~~~~ Contact ~~~~~~~~~~
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.contact .designH1 {
-    padding-top: 1%;
-    font-size: 1.75rem;
-}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~ Blog ~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.contact .formBG {
-    font-size: .7rem;
-}
+    .blog p, .blog li {
+        font-size: .8rem;
+    }
 
-.contact address p {
-    font-size: .6rem;
-    line-height: normal;
-}
+    .blog .designH5 {
+        font-size: 1.5rem;
+    }
 
-// .contact .socials i {
-    
-// }
+    .blog .blogFormat {
+        width: 130%;
+        padding-left: 10%;
+        padding-right: 36%;
+    }
 
-}
+    .blog .blogStyles {
+        width: 87%;
 
-//breakpoint the third, for teeny weeny devices?
+        // thanks to Mandeep for this !!
+        overflow-x: clip
+    }
+
+    .blog .formBG {
+        font-size: .6rem;
+    }
+
+    .blog .commentSectionContainer .commentContainer {
+        padding-left: 2%;
+    }
+
+    .blog .commentSectionContainer .commentContainer img {
+        transform: translate(2%x, 2%);
+        width: 25px;
+        height: 25px;
+    }
+
+    .blog .sidebar {
+        position: relative;
+        width: 100%;
+        left: 0;
+        padding: 5% 5% 0 5%;
+        
+        img {
+            display: none;
+        }
+    }
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // ~~~~~~~~~~ Contact ~~~~~~~~~~
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .contact .designH1 {
+        padding-top: 1%;
+        font-size: 1.75rem;
+    }
+
+    .contact .formBG {
+        font-size: .7rem;
+    }
+
+    .contact address p {
+        font-size: .6rem;
+        line-height: normal;
+    }
+} // End of 2nd breakpoint
+
+//breakpoint the 3rd, for teeny weeny devices?
 @media (max-width: 320px) {
 // HOPE THIS STAYS EMPTY FOREVER
 }

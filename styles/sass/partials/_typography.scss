@@ -51,6 +51,8 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: baseline;
 }
 
+// I set up all of my header variables based off of the six version given by the design. Therefore, designH1 corresponds to the properties for the header at the top of the design template and isn't necessarily a specific h1 or h2
+
 .designH1, .designH2, .designH3, .designH4, .designH5, .designH6 {
     font-family: variables.$headingFont;
     margin: 0;
